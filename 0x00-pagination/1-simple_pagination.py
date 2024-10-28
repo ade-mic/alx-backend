@@ -50,11 +50,14 @@ class Server:
             page_size (int): The number of items per page. Defaults to 10.
 
         Returns:
-            List[List[str]]: A list of rows corresponding to the requested page.
+            List[List[str]]: A list of rows corresponding
+            to the requested page.
         """
 
-        assert isinstance(page, int) and page > 0, "Page must be an integer greater than 0."
-        assert isinstance(page_size, int) and page_size > 0, "Page size must be an integer greater than 0."
+        assert isinstance(page, int) and page > 0,\
+            "Page must be an integer greater than 0."
+        assert isinstance(page_size, int) and page_size > 0,\
+            "Page size must be an integer greater than 0."
 
         start_index, end_index = index_range(page, page_size)
         with open(self.DATA_FILE) as f:
@@ -62,5 +65,5 @@ class Server:
             dataset = [row for row in reader]
             if start_index >= len(dataset):
                 return []
-            # remove the header row bt adding 1 
+            # remove the header row bt adding 1
             return dataset[start_index + 1:end_index + 1]
