@@ -55,9 +55,9 @@ class Server:
                 and no data was removed from the dataset, the current
                 index should be 60.
             - next_index(int): the next index to query with.
-                That should be the index of the first item 
+                That should be the index of the first item
                 after the last item on the current page
-            - page_size(int): the current page 
+            - page_size(int): the current page
             - data(List): the actual page of the dataset
         """
         assert 0 <= index < len(self.indexed_dataset()), "Index out of range."
