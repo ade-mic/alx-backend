@@ -8,7 +8,7 @@ from typing import Tuple
 
 def index_range(page: int, page_size: int) -> Tuple:
     """
-    Indexed a list for pagination.
+    Calculate the start and end indexes for pagination..
     Args:
         page(int): the page to be displayed
         page_size(int): the number of item in the page
