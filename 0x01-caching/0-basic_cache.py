@@ -29,7 +29,7 @@ Example:
     cache.put("A", "Apple")
     print(cache.get("A"))  # Output: "Apple"
 """
-from base_cashing import BaseCaching
+from base_caching import BaseCaching
 from typing import Any, Optional
 
 
