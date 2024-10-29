@@ -61,7 +61,7 @@ class BasicCache(BaseCaching):
           cache_data.
     """
 
-    def put(self, key, item):
+    def put(self, key: Optional[str], item: Optional[Any]) -> None:
         """
         Stores the item in cache_data under the specified key.
 
