@@ -15,7 +15,7 @@ Usage:
       and utilize
     the put and get methods to store and retrieve items from the cache.
 """
-BaseCaching = __import__('base_cashing').BaseCaching
+BaseCaching = __import__('base_caching').BaseCaching
 
 
 class MRUCache(BaseCaching):

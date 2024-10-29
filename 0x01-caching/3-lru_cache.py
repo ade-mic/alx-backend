@@ -14,7 +14,7 @@ Usage:
 
 """
 
-BaseCaching = __import__('base_cashing').BaseCaching
+BaseCaching = __import__('base_caching').BaseCaching
 
 
 class LRUCache(BaseCaching):
