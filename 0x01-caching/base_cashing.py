@@ -9,24 +9,24 @@ class BaseCaching():
     """
     MAX_ITEMS = 4
 
-    def __init__(self):
+    def __init__(self) -> None:
         """ Initiliaze
         """
         self.cache_data = {}
 
-    def print_cache(self):
+    def print_cache(self) -> None:
         """ Print the cache
         """
         print("Current cache:")
         for key in sorted(self.cache_data.keys()):
             print("{}: {}".format(key, self.cache_data.get(key)))
 
-    def put(self, key, item):
+    def put(self, key, item) -> None:
         """ Add an item in the cache
         """
         raise NotImplementedError("put must be implemented in your cache class")
 
-    def get(self, key):
+    def get(self, key) -> None:
         """ Get an item by key
         """
         raise NotImplementedError("get must be implemented in your cache class")

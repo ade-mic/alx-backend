@@ -30,7 +30,7 @@ Example:
     print(cache.get("A"))  # Output: "Apple"
 """
 from typing import Any, Optional
-BaseCaching = __import__('base_cashing').BaseCaching
+from base_cashing import BaseCaching
 
 
 class BasicCache(BaseCaching):
