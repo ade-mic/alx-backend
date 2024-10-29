@@ -29,6 +29,7 @@ Example:
     cache.put("A", "Apple")
     print(cache.get("A"))  # Output: "Apple"
 """
+from typing import Any, Optional
 BaseCaching = __import__('base_cashing').BaseCaching
 
 
@@ -80,7 +81,7 @@ class BasicCache(BaseCaching):
         if key and item:
             self.cache_data[key] = item
 
-    def get(self, key):
+    def get(self, key: Optional[str]) -> Optional[Any]:
         """
         Retrieves the item stored under the specified key in
           cache_data.
