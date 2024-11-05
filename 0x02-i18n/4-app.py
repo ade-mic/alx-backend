@@ -32,7 +32,7 @@ def get_locale():
     determine the best match with our supported languages.
     """
     locale = request.args.get('locale')
-    if locals in app.config['LANGUAGES']:
+    if locale in app.config['LANGUAGES']:
         return locale
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
@@ -43,7 +43,7 @@ def index():
     Use the _ or gettext function to parametrize your templates.
     Use the message IDs home_title and home_header.
     """
-    return render_template('3-index.html',
+    return render_template('4-index.html',
                            home_title=_('home_title'),
                            home_header=_('home_header'))
 
