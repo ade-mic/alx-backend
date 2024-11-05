@@ -5,10 +5,10 @@ Use the message IDs home_title and home_header.
 """
 from flask import Flask, render_template
 from flask_babel import Babel, _
-from datetime import datetime
-import pytz
 
 app = Flask(__name__)
+
+
 class Config:
     """
     Configuration class with supported
@@ -17,6 +17,7 @@ class Config:
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
+
 
 app.config.from_object(Config)
 
