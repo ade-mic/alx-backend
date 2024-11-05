@@ -17,9 +17,9 @@ class Config:
      Holds the configuration for
      languages (LANGUAGES), default locale
      """
-    LANGUAGES  = ['en', 'fr']
+    LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
-    DEFAULT_TIMEBABEL_DEFAULT_TIMEZONZONE = 'UTC'
+    BABEL_DEFAULT_TIMEZONZONE = 'UTC'
 
 
 app.config.from_object(Config)
