@@ -18,13 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: 3-app.py:13
+#: 5-app.py:13
 msgid "home_title"
 msgstr "Welcome to Holberton"
 
-#: 3-app.py:13
 msgid "home_header"
 msgstr "Hello world!"
+
+msgid "logged_in_as"
+msgstr "You are logged in as %(username)s."
+
+msgid "not_logged_in"
+msgstr "You are not logged in."
+
 
 #: int/lib/python3.8/site-packages/click/_termui_impl.py:518
 msgid "{editor}: Editing failed"
