@@ -18,9 +18,7 @@ def index():
     that simply outputs “Welcome to Holberton” as page title (<title>)
     and “Hello world” as header (<h1>).
     """
-    title = 'Welcome to Holberton'
-    h1 = 'Hello world'
-    return render_template('0-index.html', title=title, h1=h1)
+    return render_template('0-index.html')
 
 
 if __name__ == '__main__':
