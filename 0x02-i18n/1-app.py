@@ -18,7 +18,7 @@ class Config:
      languages (LANGUAGES), default locale
      """
     LANGUAGES = ["en", "fr"]
-
+    BABEL_DEFAULT_LOCALE = "en"
 
 
 app.config.from_object(Config)
